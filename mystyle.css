@@ -1,0 +1,364 @@
+/*
+http://dev.screw-axis.com/doc/chrome_extensions/guide/overview/
+*/
+
+/* http://userstyles.org/styles/59988/chatwork */
+
+pre {
+    color: #333;
+}
+
+.tm_header_bg {
+    background: -webkit-gradient( linear, left top, left bottom, from(#565656), to(#383838) ) !important;
+    background: -moz-linear-gradient( top, #565656 0%, #383838 100% ) !important;
+    background: -o-linear-gradient( top, #565656 0%, #383838 100% ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#565656, endcolorstr=#383838));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#565656, endcolorstr=#383838))";
+    zoom: 1;
+    border-bottom: 1px solid black;
+}
+
+.tm_add_button {
+    border: 1px #111 solid;
+    background-color: #333;
+    background-image: -moz-linear-gradient(#333, #333);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #333));
+    background-image: -webkit-linear-gradient(#333, #333);
+}
+
+.ui_header_nav_action li {
+    border-left: 1px #666 solid;
+}
+
+.ui_mystatus_bg {
+    border-left: 1px #666 solid;
+}
+
+.dev_mytask {
+    background: -webkit-gradient( linear, left top, left bottom, from(#73B0EE), to(#1F62A7) );
+    background: -moz-linear-gradient( top, #73B0EE 0%, #1F62A7 100% );
+}
+
+.tm_logo {
+    background: url('http://dl.dropbox.com/u/282961/chatwork/tm_logo.png') no-repeat left top;
+    width: 113px !important;
+}
+
+.ui_tooltip_add {
+    left: 105px;
+}
+
+#cw_roomlist_items_area {
+    padding-bottom: 146px;
+}
+
+.ui_roomlist_items,
+.ui_roomlist_items_area  {
+    background-color: #f8f8f8;
+}
+
+.dev_room {
+    border-bottom: 1px solid #DFDFDF;
+    color: #454545;
+}
+
+.dev_room:hover {
+    background-color: #eee;
+}
+
+.dev_selected {
+  background-position: left -10px;
+  color: #eee;
+}
+
+.dev_selected,
+.dev_selected:hover {
+    background-color: #454545;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #222;
+}
+
+.ui_room_icon {
+    background: url('http://dl.dropbox.com/u/282961/chatwork/default.png');
+}
+
+.ui_room_icon .ui_avatar_small {
+    opacity:0;
+}
+
+.ui_room_icon .cw_avatar {
+    opacity:1;
+}
+
+.tm_contentheader {
+    background-color: #ebebeb !important;
+    border-bottom: 1px solid #aaa !important;
+}
+
+#cw_outer_center .ui-layout-north {
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.40) !important;
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,.40) !important;
+    box-shadow: 0 0 15px rgba(0,0,0,.40) !important;
+    z-index:2 !important;
+    text-shadow: 0px 1px 0px white !important;
+}
+
+.tm_contentheader .autotrim {
+    color: #454545 !important;
+}
+
+.ui_room_actions {
+    border-left: none !important;
+}
+
+.ui_title_section {
+    background: transparent !important;
+    color: #454545 !important;
+    border-right: none !important;
+    border-left: 1px solid #aaa !important;
+}
+
+.ui_title_section:hover {
+    background: -webkit-gradient( linear, left top, left bottom, from(#565656), to(#383838) ) !important;
+    background: -moz-linear-gradient( top, #565656 0%, #383838 100% ) !important;
+    color: #fff !important;
+}
+
+.ui_title_section:first-child {
+    border-radius: 0;
+}
+
+.dev_date_head {
+    background: -webkit-gradient( linear, left top, left bottom, from(#fff), to(#eee) ) !important;
+    background: -moz-linear-gradient( top, #fff 0%, #eee 100% ) !important;
+    font-weight: normal;
+    border-top: 1px solid #ebebeb;
+}
+
+.ui_chat_date {
+    font-size: 11px !important;
+}
+
+.ui_message .ui_avatar_small {
+    width: 16px;
+    height: 16px;
+}
+
+.ui_chat_name {
+    font-weight: normal;
+    font-size: 13px !important;
+    color: #1962A7;
+}
+
+.ui_to {
+    border:none;
+    background: #ccc;
+}
+
+.ui_chat_action_nav {
+    border: 1px solid #ccc;
+}
+
+.ui_tag {
+    background: #e9eef5;
+    border-bottom: 1px solid #d5dde7;
+}
+
+.ui_task_date_limit, .ui_attention {
+    color: #f9215e;
+}
+
+.ui_chat_mention {
+    background: #f9f9f9;
+}
+
+.ui_chat_mention:hover {
+    background: #f3f3f3;
+}
+
+
+
+
+.ui_send_area .toolbar .hover {
+    border-radius: 0;
+    background: #ebebeb;
+}
+
+
+.ui_mention_box,
+.ui_emoticon_box {
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.40);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.40);
+    box-shadow: 0 0 10px rgba(0,0,0,.40);
+}
+
+.ui_send_area .toolbar {
+    border: none;
+    border-bottom: 1px solid #CCC;
+}
+
+.ui_sp_icon {
+    background-image: url(http://dl.dropbox.com/u/282961/chatwork/sp_icon.png);
+}
+
+.ui_send_area .toolbar .selected {
+    background-color: #DDD;
+    border-radius: 0;
+}
+
+
+
+.tm_footer_bg {
+    background: -webkit-gradient( linear, left top, left bottom, from(#f9f9f9), to(#dfdfdf) ) !important;
+    background: -moz-linear-gradient( top, #f9f9f9 0%, #dfdfdf 100% ) !important;
+}
+
+.ui_footer_nav,
+.ui_footer_nav a {
+    color: #454545;
+    line-height: 16px;
+    font-size: 10px;
+}
+
+.ui_footer_nav span:nth-child(6),
+.ui_footer_nav span:nth-child(7),
+.ui_footer_nav span:nth-child(8) {
+    display: none;
+}
+
+.ui_footer_area,
+#cw_footer {
+    height: 12px !important;
+}
+
+#cw_sound, #cw_notification {
+    padding-top: 0;
+}
+
+
+
+
+.ui-widget-overlay {
+    background: #000;
+}
+
+.ui-dialog {
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.80);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,.80);
+    box-shadow: 0 0 20px rgba(0,0,0,.80);
+}
+
+.ui-widget-header {
+    background: -webkit-gradient( linear, left top, left bottom, from(#565656), to(#383838) ) ;
+    background: -moz-linear-gradient( top, #565656 0%, #383838 100% ) ;
+    color: #fff;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+
+
+
+#cw_subinfo .ui-widget-header {
+    background:#f3f3f3 !important;
+}
+
+.ui_task_mine {
+    background: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+}
+
+.ui_task_meta span {
+    color: #888;
+}
+
+/* http://userstyles.org/styles/60680/chatwork-reduce-the-left-column-width */
+
+#cw_roomfilter {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#cw_roomfilter_area .ui_roomcategory_area {
+  overflow: hidden;
+}
+
+#cw_roomcategory {
+  float: none;
+  width: auto;
+  overflow: hidden;
+}
+
+#cw_outer_west,
+#cw_leftmenu {
+  /* width: 179px !important; /* (239px - 60px) */
+  width: 159px !important; /* (239px - 80px) */
+}
+
+#cw_roomlist_items_area .ui_roomlist_view .ui_room_title {
+  /* width: 97px; /* (157px - 60px) */
+  width: 77px; /* (157px - 80px) */
+}
+
+/* 240 px - X px */
+#cw_outer_center {
+  left: 160px !important;
+}
+
+/* http://userstyles.org/styles/46429/chatwork-tiny */
+
+.ui_avatar {
+ width:16px !important;
+ height:16px !important;
+}
+
+.ui_avatar_normal,
+.ui_avatar_medium {
+ width:16px !important;
+ height:16px !important;
+}
+
+.ui_message {
+ margin: 2px !important;
+}
+
+.ui_message pre {
+  display: inline;
+  padding-left: 3px;
+}
+
+div.ui_timeline div.ui_chat:nth-of-type(2n) {
+  background-color: #f0f0f0;
+}
+
+.ui_chat {
+  padding: 0px;
+}
+
+.ui_chat_meta {
+  display: inline;
+}
+
+.ui_roomlist_orgtitle,
+.ui_speaker_orgname {
+  display: none !important;
+}
+
+.ui_send_area {
+  height: auto !important;
+}
+
+.ui_send_button {
+  height: auto;
+}
+
+.ui_send_chat_content {
+  height: auto;
+}
