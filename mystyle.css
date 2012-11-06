@@ -1,11 +1,34 @@
 /*
-http://dev.screw-axis.com/doc/chrome_extensions/guide/overview/
+@url http://dev.screw-axis.com/doc/chrome_extensions/guide/overview/
+@url http://userstyles.org/styles/59988/chatwork
 */
 
-/* http://userstyles.org/styles/59988/chatwork */
+
+/* Basic Layout */
+
+#ui_layout {
+    height: 100% !important;
+}
+
+div#cw_footer {
+    display: none !important;
+}
+
+div#cw_return_button_box {
+    display: none !important;
+}
+
+#cw_sound, #cw_notification {
+    padding-top: 0;
+}
 
 pre {
-    color: #333;
+    color: #333 !important;
+    line-height: 1 !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px !important;
 }
 
 .tm_header_bg {
@@ -228,18 +251,6 @@ div.dev_room {
     display: none;
 }
 
-.ui_footer_area,
-#cw_footer {
-    height: 12px !important;
-}
-
-#cw_sound, #cw_notification {
-    padding-top: 0;
-}
-
-
-
-
 .ui-widget-overlay {
     background: #000;
 }
@@ -340,7 +351,7 @@ div.ui_timeline div.ui_chat:nth-of-type(2n) {
 }
 
 .ui_chat {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .ui_chat_meta {
