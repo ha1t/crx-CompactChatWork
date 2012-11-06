@@ -2,10 +2,14 @@
   "manifest_version": 2,
   "name": "KLab Chatwork",
   "version": "0.1",
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
   "content_scripts": [
     {
       "matches": ["https://kcw.kddi.ne.jp/*"],
-      "css": ["mystyle.css"]
+      "js": ["jquery.min.js", "jquery-ui.min.js", "script.js", "main.js"],
+      "css": ["mystyle.css"],
+      "run_at": "document_end",
+      "all_frames":true
     }
   ]
 }
